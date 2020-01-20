@@ -6,6 +6,42 @@
   <script type="text/javascript" src="other.css"></script>
 </head>
 <body>
+  <header>
+    <h1>KONAMI CODE</h1>
+    <h3>enter the secret code to win</h3>
+  </header>
+  <img src="assets/controller.png">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function() {
+        var keys = [];
+        var code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+        $("#win-container").hide();
+        $(document).keydown(function(keyEvent) {
+          keys.push(keyEvent.keyCode);
+          if ( keys.length > code.length ) {
+            keys.shift();
+          }
+          if ( keys.toString() == code.toString() ) {
+            $('#win-container').slideDown('slow');
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <div id="win-container">
+      you win!
+          </div>
+    </div>
+
+  </body>
+</html>
 <script>
 </script>
 </body>
