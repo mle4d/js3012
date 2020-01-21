@@ -3,6 +3,7 @@ html {
   background-color: #57e2c4a3;
   background-image: url(assets/background.png);
   background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
   text-align: center;
 }
