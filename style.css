@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P|ZCOOL+QingKe+HuangYou&display=swap');
 html {
   background-color: #57e2c4a3;
+  background-image: url(assets/background.png);
+  background-size: cover;
   overflow: hidden;
   text-align: center;
 }
-h1 {
+h2 {
   font-family: 'Press Start 2P', cursive;
-  font-size: 4em;
+  font-size: 3.5em;
   text-align: center;
   color: #f18ecb;
-  margin-top: 10px;
-}
-small {
-  font-family: 'Press Start 2P', cursive;
-  font-size: .4em;
-  text-align: center;
-  color: #ffffff;
 }
 h3 {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
   color: #f18ecb;
   margin-top: -50px;
