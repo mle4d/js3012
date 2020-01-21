@@ -8,7 +8,7 @@
 <body>
   <header>
     <h1>KONAMI CODE</h1>
-    <h3>enter the secret code to win</h3>
+    <h3>enter the code to win</h3>
   </header>
   <img src="assets/controller.png">
 
@@ -19,27 +19,29 @@
       $(document).ready(function() {
         var keys = [];
         var code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
-        $("#win-container").hide();
+        $(".container").hide();
         $(document).keydown(function(keyEvent) {
           keys.push(keyEvent.keyCode);
           if ( keys.length > code.length ) {
             keys.shift();
           }
           if ( keys.toString() == code.toString() ) {
-            $('#win-container').slideDown('slow');
+            $('.container').slideDown('slow');
           }
         });
       });
+
     </script>
   </head>
 
   <body>
-
-    <div id="win-container">
-      you win!
+      <div class="container">
+          <div class="winner">
+            <div>WINNER</div>
+            <div>WINNER</div>
+            <div>YOU&nbsp;WIN!</div>
           </div>
-    </div>
-
+          </div>
   </body>
 </html>
 <script>
